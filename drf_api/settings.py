@@ -63,7 +63,7 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
-    'https://django-rest-ap-9a62d525c1f0.herokuapp.com/',
+    'https://8000-alanpaterson-djangorest-0yj0z1q8uhy.ws-eu110.gitpod.io/',
 ]
 
 # Application definition
