@@ -63,7 +63,6 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
-    'https://8000-alanpaterson-djangorest-0yj0z1q8uhy.ws-eu110.gitpod.io/',
 ]
 
 # Application definition
