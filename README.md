@@ -86,7 +86,7 @@ VIP members can also access exclusive offers such as competitions and giveaways.
 
 ## Back end Documentation
 
-The back end Django Rest aspect of this application is there to allow full management of the accounts and for Superusers to carry out administraitve tasks as needed.
+The back end Django Rest aspect of this application is there to allow full management of the accounts and for Superusers to carry out administrative tasks as needed.
 
 To allow for easier debugging and a more simplistic view of all of the code, I chose to merge the front and back end aspects prior to submission. 
 Deployment involves the following steps via Heroku;
@@ -99,13 +99,16 @@ Deployment involves the following steps via Heroku;
 - Clicking on the 'Resources' tab and deleting any existing add-ons
 - Navigating to the Settings tab and clicking on 'Reveal Config Vars' and updating as required with all of the below fields
 
+
 <br> 
+
 
 ![Config Vars](frontend/src/assets/config_vars.png)
 
 
+<br>
 
-## Technologies
+## Technologies Used
 
 - HTML, CSS, Javascript
 - React.js
@@ -123,7 +126,7 @@ Other
 - Chrome Developer Tools to test responsiveness, inspect all pages and generate a Lighthouse report
 - Font Awesome for all icons and fonts
 - Pexels for images
-- Am I Responsive to demonstrate suitability on all devices
+- 'Am I Responsive' to demonstrate suitability on all devices
 - CI's Python Linter for automated testing of the Python code
 - W3C Markup Validator to test the HTML code
 - W3C CSS Validator to test the CSS code
