@@ -58,11 +58,12 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEBUG' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
+    '8000-alanpaterson-djangorest-z6w0mhb25mt.ws.codeinstitute-ide.net'
 ]
 
 # Application definition
@@ -149,7 +150,8 @@ else:
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    "https://8000-alanpaterson-djangorest-z6w0mhb25mt.ws.codeinstitute-ide.net"
 ]
 
 # Password validation
