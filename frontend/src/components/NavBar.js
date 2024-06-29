@@ -97,7 +97,7 @@ const NavBar = () => {
           <Navbar.Brand>
             <img src={logo} alt="logo" height="150" />
             <h4><strong>Mince 'n' Patties</strong></h4>
-            <h6>Your newest food comparison site! Post suggestions, add photos, admire everyone else's food!</h6>
+            <h6><strong>Your burger comparison site! Rate, review and recreate the ultimate comfort food!</strong></h6>
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
