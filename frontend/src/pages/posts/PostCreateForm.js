@@ -147,6 +147,7 @@ function PostCreateForm() {
                 </Form.Label>
               )}
 
+              <h4><strong>Rate, review and recreate the ultimate comfort food!</strong></h4>
               <Form.File
                 id="image-upload"
                 accept="image/*"

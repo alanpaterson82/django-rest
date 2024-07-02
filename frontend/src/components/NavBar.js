@@ -37,7 +37,7 @@ const NavBar = () => {
       to="/posts/create"
     >
       <i className="fa-solid fa-carrot"></i><strong>ADD POST</strong>
-    </NavLink>
+      </NavLink>
   );
   const loggedInIcons = (
     <>
@@ -96,8 +96,8 @@ const NavBar = () => {
         <NavLink to="/">
           <Navbar.Brand>
             <img src={logo} alt="logo" height="150" />
-            <h4><strong>Mince 'n' Patties</strong></h4>
-            <h6><strong>Your burger comparison site! Rate, review and recreate the ultimate comfort food!</strong></h6>
+            <h3><strong>Mince 'n' Patties</strong></h3>
+          <h5><strong>Your favourite burger comparison site!</strong></h5>
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
