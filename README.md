@@ -6,7 +6,7 @@ This project closely followed the Moments walkthrough to allow me to further my 
 
 The main goal of this project is to build a community where ideas, thoughts and opinions can be shared to generate interesting discussions with others, and to provide culinary inspiration .
 
-The full platform is available to view [here](https://8000-alanpaterson-djangorest-0yj0z1q8uhy.ws-eu110.gitpod.io/).
+The full platform is available to view [here](https://django-rest-ap-9a62d525c1f0.herokuapp.com/).
 
 ![Am I Responsive](frontend/src/assets/am-i-responsive.png)
 
