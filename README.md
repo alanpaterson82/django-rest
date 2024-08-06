@@ -206,3 +206,38 @@ The below will be actioned either via a cloned repository or prior to my portfol
 - Additional features such as recipe sharing and restaurant reviews
 
 
+## RESUBMISSION
+
+- Lacking in the amount of required models or no models present
+- API data is not displayed effectively on the front-end, or is not manipulatable, such as to severely hamper user experience - post details are not displayed on the post detail page
+- The create post feature seemed to have an issue with showing the post after it was created, trying to comment or like the newly created post caused a 400 error yet nothing was shown to the user. I could see by refreshing that the post had indeed been created. It seemed like the issue was with the post detail page. It would also not show the image and the number of comments was NaN (not a number)
+- Post details are not editable, and a user cannot delete their posts
+- On a post detail page, the post image is not displaying
+- Database Schema is limited in scope to that presented on the course walkthrough project
+- The design process and its reasoning are not documented and/or wireframes, mockups and diagrams created as part of the design process are missing from the README
+- No indication of the use of Github project or similar tool for the tracking of project management methodology
+- No presence of user stories in the documentation
+- No documentation of the use of reusable React components, understanding of React architecture is not apparent
+- The header image on mobile was a little bit large, taking up almost half the available space
+- The icons don't look right anymore at the top of the homepage
+- Manual testing steps are missing or lacking in any meaningful details for the Back-End application
+- The Python code style generally conforms to the PEP8 style guide with a few exceptions such as lines too long and no new line at end of file
+- Some of the git commit messages were identical and should be more specific
+- There is placeholder text present - 'popular profiles for desktop' and popular profiles for mobile' (PostPage.js)
+- UX/ UI issues are present that may hamper a user's ability to understand and/or interact with the application
+- The site is confusing and should only be a burger comparison site
+- Images on READMe have been changed
+- Link on READMe is wrong to view the project
+
+
+
+
+
+
+
+
+
+
+
+
+

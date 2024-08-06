@@ -4,7 +4,7 @@ class Recipe(models.Model):
 
     name = models.CharField(max_length=128)
     food_pic = models.ImageField(
-        upload_to='food_pic/', default="food_pic/default_profle_izlylf", blank=True
+        upload_to='food_pic/', default="food_pic/default_profle_izly1f", blank=True
     )
     ingredients = models.TextField(max_length=4096)
 
