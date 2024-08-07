@@ -153,7 +153,7 @@ Due to time constraints and a significant number of issues encountered during th
 
 <br>
 
-![Lighthouse](frontend/src/assets/lighthouse.png)
+![Lighthouse](frontend/src/assets/lighthouse.jpg)
 
 
 <br>
