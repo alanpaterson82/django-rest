@@ -8,7 +8,7 @@ The main goal of this project is to build a community where ideas, thoughts and 
 
 The full platform is available to view [here](https://django-rest-ap-9a62d525c1f0.herokuapp.com/).
 
-![Am I Responsive](frontend/src/assets/am-i-responsive.png)
+![Am I Responsive](frontend/src/assets/am-i-responsive.jpg)
 
 ## Front end Design and Documentation
 
@@ -204,6 +204,8 @@ The below will be actioned either via a cloned repository or prior to my portfol
 - More independent code writing, and not relying so heavily on the walkthrough projects
 - Increased functionality and an improved user experience
 - Additional features such as recipe sharing and restaurant reviews
+- Additional users stories are to be included covering each scenario across the website 
+- Improved labelling and milestones on the project board
 
 
 ## RESUBMISSION
