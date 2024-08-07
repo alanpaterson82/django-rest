@@ -18,7 +18,7 @@ The landing page is bright, informative and eye-catching and allows you to view 
 
 <br>
 
-![Landing Page](frontend/src/assets/landing_page.png)
+![Landing Page](frontend/src/assets/landing_page.jpg)
 
 <br>
 
@@ -65,7 +65,7 @@ You can also choose to follow and unfollow other users to build your network, as
 
 <br>
 
-![Likes and comments](frontend/src/assets/likes_and_comments.png)
+![Likes and comments](frontend/src/assets/likes_and_comments.jpg)
 
 <br>
 
