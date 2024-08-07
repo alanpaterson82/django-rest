@@ -8,7 +8,7 @@ The main goal of this project is to build a community where ideas, thoughts and 
 
 The full platform is available to view [here](https://django-rest-ap-9a62d525c1f0.herokuapp.com/).
 
-![Am I Responsive](frontend/src/assets/am-i-responsive.jpg)
+![Am I Responsive](frontend/src/assets/am_i_responsive.jpg)
 
 ## Front end Design and Documentation
 
