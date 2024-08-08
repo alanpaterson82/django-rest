@@ -54,7 +54,7 @@ Once logged in there are various options as detailed below:
 
 <br>
 
-![Navbar](frontend/src/assets/navbar.png)
+![Navbar](frontend/src/assets/navbar.jpg)
 
 <br>
 
@@ -91,6 +91,14 @@ The front end of this application allows for full CRUD functionality and subscri
 The current custom models are the user and profile options, however, with further development there is scope for much more interactive content including but not limited to, recipe sharing, polls on favourite foods, meal planning suggestions and restaurant recommendations.  
 
 VIP members can also access exclusive offers such as competitions and giveaways.
+
+<br>
+
+## Colours, Fonts and Images
+
+### Colours
+### Fonts
+### Images
 
 <br>
 
