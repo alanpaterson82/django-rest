@@ -108,6 +108,25 @@ VIP members can also access exclusive offers such as competitions and giveaways.
 
 <br>
 
+## Use of Reusable React Components (Examples)
+
+* Asset.js (const Asset)
+    - For when a page is loading and a spinner is to be displayed
+* Avatar.js (const Avatar)
+    - For handling default Avatar images
+* MoreDropdown.js (const MoreDropDown)
+    - For users to edit a comment, for example. Used in Post.js, ProfilePage.js and Comment.js and MoreDropdown.js
+* Navbar.js (const NavBar)
+* SignUp.js (const SignUpForm)
+    - Allows users to register their details
+* Comment.js (const Comment)
+    - Allows a comment to be posted, edited or deleted
+* CommentCreateForm.js (function CommentCreateForm)
+    - Used in PostPage.js to allow comments to be added
+* CommentEditForm.js (function CommentEditForm)
+    - Used in Comment.js to edit existing comments
+
+
 ## Back end Documentation
 
 The back end Django Rest aspect of this application is there to allow full management of the accounts and for Superusers to carry out administrative tasks as needed.
