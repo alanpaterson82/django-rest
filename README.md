@@ -12,6 +12,12 @@ The full platform is available to view [here](https://django-rest-ap-9a62d525c1f
 
 The initial concept was for the website to be easy to navigate and simple to understand. The planning of the site was via user stories and the project can be found [here](https://github.com/users/alanpaterson82/projects/10), with the basic premise outlined below for the landing page.
 
+## Data
+
+### ERD
+
+![ERD](frontend/src/assets/erd.jpg)
+
 ## Wireframe
 
 ### Landing Page:
