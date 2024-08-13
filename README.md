@@ -1,10 +1,10 @@
 # Mince 'n' Patties
 
-Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on user's culinary interests. Primarily it is for subscribers to post pictures of any recent meals, creations or experiences, eventually leading to exclusive content for VIP members and recipe sharing, for example, at a later date.
+Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on user's culinary interests. Primarily it is for subscribers to post pictures of any recent (burger related) meals, creations or experiences, post opinions and generate discussion points. Eventually there will be access to exclusive content for VIP members and the opportunity to share recipes, for example, as the site develops.
 
 This project closely followed the Moments walkthrough to allow me to further my skills and knowledge using a reliable, trustworthy source material. Any duplication or use of specific code is completely unintentional and all images used are for educational purposes only.
 
-The main goal of this project is to build a community where ideas, thoughts and opinions can be shared to generate interesting discussions with others, and to provide culinary inspiration .
+The main goal of this project is to build a community where ideas, thoughts and opinions can be shared to generate interesting discussions with others, and to provide culinary inspiration.
 
 The full platform is available to view [here](https://django-rest-ap-9a62d525c1f0.herokuapp.com/).
 
@@ -14,7 +14,7 @@ The initial concept was for the website to be easy to navigate and simple to und
 
 ## Data
 
-### ERD
+### Entity Relationship Diagram
 
 ![ERD](frontend/src/assets/erd.jpg)
 
@@ -103,6 +103,15 @@ VIP members can also access exclusive offers such as competitions and giveaways.
 ## Colours, Fonts and Images
 
 ### Colours
+
+The colours used are subtle with contrasting tones for the icons to ensure ease of visibility and navigation. They were also chosen to represent various components of a burger.
+
+![Colours](frontend/src/assets/colours.jpg)
+
+![#f7e8d1](https://placehold.co/15x15/f7e8d1/f7e8d1.png) The bun
+![#e96f1e](https://placehold.co/15x15/e96f1e/e96f1e.png) The cheese
+![#c50e0e](https://placehold.co/15x15/c50e0e/c50e0e.png) The tomato sauce
+
 ### Fonts
 ### Images
 
@@ -240,15 +249,13 @@ The following resources were utilised when trying to resolve all of the above;
 The below will be actioned either via a cloned repository or prior to my portfolio being completed.
 
 - Significantly more testing to ensure that everything is in working order
-- Detailed database schema diagrams and an improved structural approach to planning
-- User stories with the addition of labels and milestones
+- The addition of more detailed labels and milestones added to the Project Board
 - Debugging
 - Improved styling
 - More independent code writing, and not relying so heavily on the walkthrough projects
 - Increased functionality and an improved user experience
 - Additional features such as recipe sharing and restaurant reviews
 - Additional users stories are to be included covering each scenario across the website 
-- Improved labelling and milestones on the project board
 
 
 ## RESUBMISSION
