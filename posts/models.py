@@ -29,7 +29,8 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default="images/default_profile_izly1f", blank=True
+        upload_to='images/', default="images/default_profile_izly1f",
+        blank=True
     )
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
@@ -40,3 +41,18 @@ class Post(models.Model):
 
     def __str__(self):
         return f'{self.id} {self.title}'
+
+class Recipe(models.Model):
+    recipe_name = models.CharField(blank=False, max_length=300, unique=True)
+    recipe_description = models.TextField(
+        blank=False, max_length=1000, unique=True
+    )
+    recipe_ingredients = models.TextField(blank=False, max_length=2000, unique=False)
+    recipe_steps = models.TextField(blank=False, max_length=2000, unique=False)
+
+class ContactForm(models.Model):
+    username = models.CharField(blank=False, max_length=300, unique=False)
+    email = models.EmailField(
+    )
+    subject = models.TextField(blank=False, max_length=1000, unique=False)
+    comment = models.TextField(blank=False, max_length=2000, unique=False)
