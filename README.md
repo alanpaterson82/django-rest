@@ -1,5 +1,8 @@
 # Mince 'n' Patties
 
+
+# DEBUG MUST = FALSE!!!
+
 Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on user's culinary interests. Primarily it is for subscribers to post pictures of any recent (burger related) meals, creations or experiences, post opinions and generate discussion points. Eventually there will be access to exclusive content for VIP members and the opportunity to share recipes, for example, as the site develops.
 
 This project closely followed the Moments walkthrough to allow me to further my skills and knowledge using a reliable, trustworthy source material. Any duplication or use of specific code is completely unintentional and all images used are for educational purposes only.

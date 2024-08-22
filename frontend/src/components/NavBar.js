@@ -39,6 +39,7 @@ const NavBar = () => {
       <i className="fa-solid fa-carrot"></i><strong>ADD POST</strong>
       </NavLink>
   );
+
   const loggedInIcons = (
     <>
       <NavLink
@@ -82,8 +83,11 @@ const NavBar = () => {
       >
         <i className="fa-solid fa-drumstick-bite"></i><strong>Sign up</strong>
       </NavLink>
+      <NavLink>Contact Us</NavLink>
     </>
   );
+
+  
 
   return (
     <Navbar
