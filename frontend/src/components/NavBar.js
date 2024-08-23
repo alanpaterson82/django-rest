@@ -56,7 +56,7 @@ const NavBar = () => {
     activeClassName={styles.Active}
     to="/recipes/create"
   >
-    <i className="far fa-plus-circle"></i><strong>Recipes</strong>
+    <i className="fa-solid fa-kitchen-set"></i><strong>Recipes</strong>
     </NavLink>
   )
 
