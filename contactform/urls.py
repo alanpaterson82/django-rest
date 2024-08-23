@@ -1,12 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from myapp.views import ItemViewSet
-
-router = DefaultRouter()
-router.register(r'items', ItemViewSet)
+from django.urls import path
+from contactform import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('contactform/', views.ContactFormList.as_view()),
+    path('contactform/<int:pk>/', views.ContactFormDetail.as_view()),
 ]

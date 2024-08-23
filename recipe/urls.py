@@ -1,12 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from myapp.views import ItemViewSet
-
-router = DefaultRouter()
-router.register(r'items', ItemViewSet)
+from django.urls import path
+from recipe import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('recipe/', views.RecipeList.as_view()),
+    path('recipe/<int:pk>/', views.RecipeDetail.as_view()),
 ]

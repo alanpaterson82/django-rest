@@ -1,7 +1,7 @@
 from rest_framework import viewsets
-from .models import Item
-from .serializers import ItemSerializer
+from .models import ContactForm
+from .serializers import ContactFormSerializer
 
-class ItemViewSet(viewsets.ModelViewSet):
-    queryset = Item.objects.all()
-    serializer_class = ItemSerializer
+class ContactFormViewSet(viewsets.ModelViewSet):
+    queryset = ContactForm.objects.all()
+    serializer_class = ContactFormSerializer

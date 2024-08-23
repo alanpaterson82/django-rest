@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Item
+from .models import Recipe
 
-class ItemSerializer(serializers.ModelSerializer):
+class RecipeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Item
+        model = Recipe
         fields = ['id', 'name', 'description']

@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Item
+from .models import ContactForm
 
-class ItemSerializer(serializers.ModelSerializer):
+class ContactFormSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Item
+        model = ContactForm
         fields = ['id', 'name', 'description']
