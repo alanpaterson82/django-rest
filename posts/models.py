@@ -51,7 +51,7 @@ class Recipe(models.Model):
     unique=False)
     recipe_steps = models.TextField(blank=False, max_length=2000, unique=False)
 
-class Contact(models.Model):
+class ContactForm(models.Model):
     username = models.CharField(blank=False, max_length=300, unique=False)
     email = models.EmailField(
     )
