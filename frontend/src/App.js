@@ -1,3 +1,6 @@
+import React from 'react';
+import RecipeList from './components/RecipeList';
+import RecipeForm from './components/RecipeForm';
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
 import Container from "react-bootstrap/Container";
@@ -20,8 +23,17 @@ function App() {
   const currentUser = useCurrentUser();
   const profile_id = currentUser?.profile_id || "";
 
+const App = () => {
   return (
-    <div className={styles.App}>
+      <div>
+        <RecipeForm />
+        <RecipeList />
+      </div>
+    );
+};
+
+  return (
+      <div className={styles.App}>
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
@@ -80,5 +92,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
