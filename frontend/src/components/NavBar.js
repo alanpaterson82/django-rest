@@ -36,9 +36,29 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="fa-solid fa-carrot"></i><strong>ADD POST</strong>
+      <i className="fa-solid fa-carrot"></i><strong>Add Post</strong>
       </NavLink>
   );
+
+  const contactIcon = (
+    <NavLink
+    className={styles.NavLink}
+    activeClassName={styles.Active}
+    to="/contact/create"
+  >
+    <i className="far fa-plus-square"></i><strong>Contact</strong>
+    </NavLink>
+  )
+
+  const recipesIcon = (
+    <NavLink
+    className={styles.NavLink}
+    activeClassName={styles.Active}
+    to="/recipes/create"
+  >
+    <i className="far fa-plus-circle"></i><strong>Recipes</strong>
+    </NavLink>
+  )
 
   const loggedInIcons = (
     <>
@@ -104,6 +124,8 @@ const NavBar = () => {
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
+        {currentUser && contactIcon}
+        {currentUser && recipesIcon}
         <Navbar.Toggle
           ref={ref}
           onClick={() => setExpanded(!expanded)}
