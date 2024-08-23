@@ -83,7 +83,6 @@ const NavBar = () => {
       >
         <i className="fa-solid fa-drumstick-bite"></i><strong>Sign up</strong>
       </NavLink>
-      <NavLink>Contact Us</NavLink>
     </>
   );
 

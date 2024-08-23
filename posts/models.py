@@ -47,10 +47,11 @@ class Recipe(models.Model):
     recipe_description = models.TextField(
         blank=False, max_length=1000, unique=True
     )
-    recipe_ingredients = models.TextField(blank=False, max_length=2000, unique=False)
+    recipe_ingredients = models.TextField(blank=False, max_length=2000,
+    unique=False)
     recipe_steps = models.TextField(blank=False, max_length=2000, unique=False)
 
-class ContactForm(models.Model):
+class Contact(models.Model):
     username = models.CharField(blank=False, max_length=300, unique=False)
     email = models.EmailField(
     )
