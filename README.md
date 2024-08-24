@@ -230,7 +230,7 @@ The W3C Markup Validator and W3c CSS produced the following results;
 
 <br>
 
-THe performance is disappointing and will be reviewed and improved wherever possible.
+The performance is disappointing and will be reviewed and improved wherever possible.
 
 <br>
 
