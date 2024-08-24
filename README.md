@@ -292,9 +292,9 @@ The below will be actioned either via a cloned repository or prior to my portfol
 - updated views.py
 - updated urls.py
 - updated project urls
-- created contact.js, recipeform.js and recipelist.js
-- updated app.js
-- added contact.ss to styles
+- created contact.js, recipeform.js and recipelist.js - deleted
+- updated app.js - deleted
+- added contact.ss to styles - deleted
 
 
 

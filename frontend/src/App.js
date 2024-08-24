@@ -1,6 +1,4 @@
 import React from 'react';
-import RecipeList from './components/RecipeList';
-import RecipeForm from './components/RecipeForm';
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
 import Container from "react-bootstrap/Container";
@@ -18,19 +16,11 @@ import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
+import ContactCreateForm from "./pages/contact/ContactCreateForm";
 
 function App() {
   const currentUser = useCurrentUser();
   const profile_id = currentUser?.profile_id || "";
-
-const App = () => {
-  return (
-      <div>
-        <RecipeForm />
-        <RecipeList />
-      </div>
-    );
-};
 
   return (
       <div className={styles.App}>
@@ -70,6 +60,7 @@ const App = () => {
           <Route exact path="/posts/:id" render={() => <PostPage />} />
           <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
+          <Route exact path="/contact/create" render={() => <ContactCreateForm />} />
           <Route
             exact
             path="/profiles/:id/edit/username"
