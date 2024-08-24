@@ -1,4 +1,6 @@
-import Form from 'react-bootstrap/Form';
+import Form from "react-bootstrap/Form";
+import Button from 'react-bootstrap/Button';
+import React from 'react';
 
 function ContactCreateForm() {
   return (
@@ -15,8 +17,10 @@ function ContactCreateForm() {
         <Form.Label>Comment</Form.Label>
         <Form.Control as="textarea" rows={10} />
       </Form.Group>
+      <Button variant="secondary">Send</Button>{' '}
     </Form>
-  );
+    );
 }
+
 
 export default ContactCreateForm;

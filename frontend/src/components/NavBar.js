@@ -36,7 +36,7 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="fa-solid fa-carrot"></i><strong>Add Post</strong>
+      <i className="fa-solid fa-carrot"></i><strong>Post</strong>
       </NavLink>
   );
 
@@ -77,7 +77,7 @@ const NavBar = () => {
         <i className="fa-solid fa-pepper-hot"></i><strong>Hot Stuff</strong>
       </NavLink>
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-        <i className="fa-solid fa-person-through-window"></i><strong>Sign out</strong>
+        <i className="fa-solid fa-person-through-window"></i><strong>Exit</strong>
       </NavLink>
       <NavLink
         className={styles.NavLink}
