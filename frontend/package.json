@@ -43,11 +43,11 @@
     ]
   },
   "devDependencies": {
-    "msw": "^2.2.14"
+    "msw": "^2.2.14",
+    "nsw": "^0.1.0"
   },
   "engines": {
     "node": "16.20.2"
   },
   "proxy": "http://localhost:8000/"
 }
-
