@@ -35,7 +35,7 @@ The landing page is bright, informative and eye-catching and allows you to view 
 
 <br>
 
-![Landing Page](frontend/src/assets/landing_page.jpg)
+![Landing Page](frontend/src/assets/landing_page2.jpg)
 
 <br>
 
@@ -146,6 +146,7 @@ The images are attractive and welcoming to encourage interaction with the posts 
 * CommentEditForm.js (function CommentEditForm)
     - Used in Comment.js to edit existing comments
 
+<br>
 
 ## Back end Documentation
 
