@@ -1,15 +1,13 @@
 # Mince 'n' Patties
 
 
-# DEBUG MUST = FALSE!!!
-
-Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on user's culinary interests. Primarily it is for subscribers to post pictures of any recent (burger related) meals, creations or experiences, post opinions and generate discussion points. Eventually there will be access to exclusive content for VIP members and the opportunity to share recipes, for example, as the site develops.
+Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on user's culinary interests. Primarily it is for subscribers to post pictures of any recent (burger related) meals, creations or experiences, post opinions and generate discussion points as well as sharing recipe ideas. Eventually there will be access to exclusive content for VIP members, for example, as the site develops.
 
 This project closely followed the Moments walkthrough to allow me to further my skills and knowledge using a reliable, trustworthy source material. Any duplication or use of specific code is completely unintentional and all images used are for educational purposes only.
 
 The main goal of this project is to build a community where ideas, thoughts and opinions can be shared to generate interesting discussions with others, and to provide culinary inspiration.
 
-The full platform is available to view [here](https://django-rest-ap-9a62d525c1f0.herokuapp.com/).
+The full platform is available to view [here](https://8080-alanpaterson-djangorest-z6w0mhb25mt.ws.codeinstitute-ide.net/).
 
 ![Am I Responsive](frontend/src/assets/am_i_responsive.jpg)
 
