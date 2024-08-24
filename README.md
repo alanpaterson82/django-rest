@@ -3,7 +3,7 @@
 
 Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on user's culinary interests. Primarily it is for subscribers to post pictures of any recent (burger related) meals, creations or experiences, post opinions and generate discussion points as well as sharing recipe ideas. Eventually there will be access to exclusive content for VIP members, for example, as the site develops.
 
-This project closely followed the Moments walkthrough to allow me to further my skills and knowledge using a reliable, trustworthy source material. Any duplication or use of specific code is completely unintentional and all images used are for educational purposes only.
+This project closely followed the Moments walkthrough to allow me to further my skills and knowledge using a reliable, trustworthy source material. Any duplication or use of specific code is completely unintentional.
 
 The main goal of this project is to build a community where ideas, thoughts and opinions can be shared to generate interesting discussions with others, and to provide culinary inspiration.
 
@@ -61,15 +61,17 @@ Once logged in there are various options as detailed below:
 
 <br>
 
-![Navbar](frontend/src/assets/navbar.jpg)
+![Navbar](frontend/src/assets/navbar2.jpg)
 
 <br>
 
-- ADD POST - upload your own content to share with the world!
+- Post - upload your own content to share with the world!
+- Contact - get in touch with your views and feedback!
+- Recipes - upload reciped for others to enjoy
 - Home - return to the homepage to review the initial content
 - Feed - look for likes, comments and inspiration!
 - Hot stuff - your own personal file of everything that you have liked so far
-- Sign out - leave the platform, until next time!
+- Exit - leave the platform, until next time!
 - Profile - review your details and edit them as you wish eg profile picture, password or username.
 
 <br>
@@ -78,11 +80,11 @@ You can also choose to follow and unfollow other users to build your network, as
 
 <br>
 
-![Follow](frontend/src/assets/follow_and_unfollow.png)
+![Follow](frontend/src/assets/most_followed_profiles.jpg)
 
 <br>
 
-![Likes and comments](frontend/src/assets/likes_and_comments.jpg)
+![Likes and comments](frontend/src/assets/likes_and_comments_2.jpg)
 
 <br>
 
@@ -95,9 +97,9 @@ The front end of this application allows for full CRUD functionality and subscri
 
 <br>
 
-The current custom models are the user and profile options, however, with further development there is scope for much more interactive content including but not limited to, recipe sharing, polls on favourite foods, meal planning suggestions and restaurant recommendations.  
+The current custom models are the user and profile options as well as a 'contact us' form and recipe sharing page, however, there is scope for much more interactive content including but not limited to, polls on favourite foods, meal planning suggestions and restaurant recommendations.  
 
-VIP members can also access exclusive offers such as competitions and giveaways.
+VIP members could also access exclusive offers such as competitions and giveaways.
 
 <br>
 
@@ -114,12 +116,20 @@ The colours used are subtle with contrasting tones for the icons to ensure ease 
 ![#c50e0e](https://placehold.co/15x15/c50e0e/c50e0e.png) The tomato sauce
 
 ### Fonts
+
+The font used is Comic Neue which is quirky and playful as the site doesn't take itself too seriously and this choice reflects that.
+
 ### Images
+
+The images are attractive and welcoming to encourage interaction with the posts and to delve deeper into what the site can do. The majority are from Pexels, and all images used are for educational purposes only.
 
 <br>
 
 ## Use of Reusable React Components (Examples)
 
+<br>
+
+* Form and Button, imported to ContactCreateForm.js and RecipesCreateForm.js 
 * Asset.js (const Asset)
     - For when a page is loading and a spinner is to be displayed
 * Avatar.js (const Avatar)
@@ -194,20 +204,32 @@ Other
 
 ## Manual Testing
 
-Due to time constraints and a significant number of issues encountered during the design of this project, there was limited testing undertaken, but this is to be factored into any future projects to further enhance my knowledge of this area, it is fully understood how important this is. Prior to submission there were are number of errors highlighted via the W3C Markup and CSS validation systems. These will be looked into and corrected as part of the ongoing learning process.
+Due to time constraints and a significant number of issues encountered during the design of this project, there was limited testing undertaken, but this is to be factored into any future projects to further enhance my knowledge of this area, it is fully understood how important this is. 
+
+Testing attempts resulted in the following errors, stil to be resolved;
+
+![Testing](frontend/src/assets/testing.jpg)
+
+![Testing2](frontend/src/assets/testing2.jpg)
+
+The W3C Markup Validator and W3c CSS produced the following results;
 
 <br>
 
-![W3C Markup](frontend/src/assets/w3c-markup.png)
+![W3C Validator](frontend/src/assets/w3_validator.jpg)
 
 <br>
 
-![W3C CSS](frontend/src/assets/w3c-css.png)
+![W3C CSS](frontend/src/assets/W3C_CSS.jpg)
 
 <br>
 
-![Lighthouse](frontend/src/assets/lighthouse.jpg)
+![Lighthouse](frontend/src/assets/lighthouse2.jpg)
 
+
+<br>
+
+THe performance is disappointing and will be reviewed and improved wherever possible.
 
 <br>
 
@@ -231,7 +253,10 @@ All of the above issues were initially resolved by removing DEV - 1 from the con
 - Sourcing images of the correct size and dimensions proved difficult 
 - My Cloudinary structure is incorrect but has now been resolved - this was also contributing to broken image links
 - The Admin page is no longer styled when deployed via Heroku and since deploying for the final time I can no longer access the backend
-- Images are now not uploading with new posts
+- There are ongoing issues with the DRUD functionality on the post detila page - the option to edit and delete posts is not available and the avatar image link is broken. Significant time was taken to resolve this but ultimately remains unresolved, resulting in severely affected UX, but this will continue to be worked on.
+- The custom models have been added to the back end, but are not interactive with the front end - an issue that will also be looked at on an ongoing basis until it is corrected.
+- The Python code style generally conformed but any deviations were amended
+- THe infinite scroll function was working successfully initially but has since become an issue, again resulting in poor UX, but will be fixed in future
 
 <br>
 
@@ -244,6 +269,17 @@ The following resources were utilised when trying to resolve all of the above;
 - The Slack Community
 - Mentor Sessions
 - Google
+
+## Custom Models
+
+The initial process (although currently incomplete) was as follows;
+
+- created apps
+- updated models.py
+- set up serializer
+- updated views.py
+- updated urls.py
+- updated project urls
 
 ## Future Actions 
 
@@ -259,40 +295,7 @@ The below will be actioned either via a cloned repository or prior to my portfol
 - Additional users stories are to be included covering each scenario across the website 
 
 
-## RESUBMISSION
 
-- Lacking in the amount of required models or no models present
-- API data is not displayed effectively on the front-end, or is not manipulatable, such as to severely hamper user experience - post details are not displayed on the post detail page
-- The create post feature seemed to have an issue with showing the post after it was created, trying to comment or like the newly created post caused a 400 error yet nothing was shown to the user. I could see by refreshing that the post had indeed been created. It seemed like the issue was with the post detail page. It would also not show the image and the number of comments was NaN (not a number)
-- Post details are not editable, and a user cannot delete their posts
-- On a post detail page, the post image is not displaying
-- Database Schema is limited in scope to that presented on the course walkthrough project
-- The design process and its reasoning are not documented and/or wireframes, mockups and diagrams created as part of the design process are missing from the README
-- No indication of the use of Github project or similar tool for the tracking of project management methodology
-- No presence of user stories in the documentation
-- No documentation of the use of reusable React components, understanding of React architecture is not apparent
-- The header image on mobile was a little bit large, taking up almost half the available space
-- The icons don't look right anymore at the top of the homepage
-- Manual testing steps are missing or lacking in any meaningful details for the Back-End application
-- The Python code style generally conforms to the PEP8 style guide with a few exceptions such as lines too long and no new line at end of file
-- Some of the git commit messages were identical and should be more specific
-- There is placeholder text present - 'popular profiles for desktop' and popular profiles for mobile' (PostPage.js)
-- UX/ UI issues are present that may hamper a user's ability to understand and/or interact with the application
-- The site is confusing and should only be a burger comparison site
-- Images on READMe have been changed
-- Link on READMe is wrong to view the project
-
-## Custom Models
-
-- created apps
-- updated models.py
-- set up serializer
-- updated views.py
-- updated urls.py
-- updated project urls
-- created contact.js, recipeform.js and recipelist.js - deleted
-- updated app.js - deleted
-- added contact.ss to styles - deleted
 
 
 
