@@ -11,7 +11,7 @@ The full platform is available to view [here](https://8080-alanpaterson-djangore
 
 ![Am I Responsive](frontend/src/assets/am_i_responsive.jpg)
 
-The initial concept was for the website to be easy to navigate and simple to understand. The planning of the site was via user stories and the project can be found [here](https://github.com/users/alanpaterson82/projects/10), with the basic premise outlined below for the landing page.
+The initial concept was for the website to be easy to navigate and simple to understand. The planning of the site was via user stories and the project can be found [here](https://github.com/users/alanpaterson82/projects/10), (two user stories remain 'in progress' as further work is needed for them to be fully functional). The basic premise is outlined below for the landing page.
 
 ## Data
 
