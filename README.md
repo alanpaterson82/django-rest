@@ -67,7 +67,7 @@ Once logged in there are various options as detailed below:
 
 - Post - upload your own content to share with the world!
 - Contact - get in touch with your views and feedback
-- Recipes - upload reciped for others to enjoy
+- Recipes - upload recipes for others to enjoy
 - Home - return to the homepage to review the initial content
 - Feed - look for likes, comments and inspiration
 - Hot stuff - your own personal file of everything that you have liked so far
@@ -279,9 +279,9 @@ There had also been a further error, but during a Tutor session this appeared to
 
 <br>
 
-- The custom models have been added to the back end, but are not interactive with the front end - an issue that will also be looked at on an ongoing basis until it is corrected
+- The custom models have been added to the back-end, but are not interactive with the front-end - an issue that will also be looked at on an ongoing basis until it is corrected
 - The Python code style generally conforms and any obvious deviations were amended
-- The infinite scroll function was working successfully initially but has since become an issue, again resulting in poor UX, but will be fixed in future
+- The infinite scroll function was working successfully initially but has since become an issue, resulting in poor UX, but will be fixed in future
 
 <br>
 
@@ -293,6 +293,7 @@ The following resources were utilised when trying to resolve all of the above;
 - Mentor/ Tutor one-to-one Sessions
 - Google
 - Diffchecker
+- Full reviews of the walkthrough projects
 
 <br>
 
