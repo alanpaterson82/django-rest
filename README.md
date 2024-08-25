@@ -1,9 +1,9 @@
 # Mince 'n' Patties
 
 
-Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on user's culinary interests. Primarily it is for subscribers to post pictures of any recent (burger related) meals, creations or experiences, post opinions and generate discussion points as well as sharing recipe ideas. Eventually there will be access to exclusive content for VIP members, for example, as the site develops.
+Mince 'n' Patties is my fifth and final portfolio project and is a content sharing platform focusing on users culinary interests. Primarily it is for subscribers to post pictures of any recent (burger related) meals, creations or experiences, post opinions and generate discussion points as well as sharing recipe ideas. Eventually there will be access to exclusive content for VIP members, for example, as the site develops.
 
-This project closely followed the Moments walkthrough to allow me to further my skills and knowledge using a reliable, trustworthy source material. Any duplication or use of specific code is completely unintentional.
+This project closely followed the Moments walkthrough to allow me to further develop my skills and knowledge using a reliable, trustworthy source material. Any duplication or use of specific code is completely unintentional.
 
 The main goal of this project is to build a community where ideas, thoughts and opinions can be shared to generate interesting discussions with others, and to provide culinary inspiration.
 
@@ -13,23 +13,23 @@ The full platform is available to view [here](https://django-rest-ap-9a62d525c1f
 
 The initial concept was for the website to be easy to navigate and simple to understand. The planning of the site was via user stories and the project can be found [here](https://github.com/users/alanpaterson82/projects/10), (two user stories remain 'in progress' as further work is needed for them to be fully functional). The basic premise is outlined below for the landing page.
 
-## Data
-
-### Entity Relationship Diagram
-
-![ERD](frontend/src/assets/erd.jpg)
-
 ## Wireframe
 
 ### Landing Page:
 
 ![wireframe](frontend/src/assets/wireframe_landing_page.jpg)
 
+## Data
+
+### Entity Relationship Diagram
+
+![ERD](frontend/src/assets/erd.jpg)
+
 <br>
 
-## Front end Design and Documentation
+## Front-end Design and Documentation
 
-The React front end of this application has full CRUD functionality so that users can register, log-in, like and comment on other posts and also upload their own content.
+The React front-end of this application has full CRUD functionality so that users can register, log-in, like and comment on other posts and also upload their own content.
 
 The landing page is bright, informative and eye-catching and allows you to view the existing feed via the homepage, sign in or sign up for your own account.
 
@@ -66,15 +66,29 @@ Once logged in there are various options as detailed below:
 <br>
 
 - Post - upload your own content to share with the world!
-- Contact - get in touch with your views and feedback!
+- Contact - get in touch with your views and feedback
 - Recipes - upload reciped for others to enjoy
 - Home - return to the homepage to review the initial content
-- Feed - look for likes, comments and inspiration!
+- Feed - look for likes, comments and inspiration
 - Hot stuff - your own personal file of everything that you have liked so far
 - Exit - leave the platform, until next time!
 - Profile - review your details and edit them as you wish eg profile picture, password or username.
 
-<br>
+
+## Custom Models
+
+The initial process (although currently incomplete) was as follows;
+
+- created apps
+- updated models.py
+- set up serializer
+- updated views.py
+- updated urls.py
+- updated project urls
+
+## Example of Custom Model - Contact Page
+
+![Contact Page](frontend/src/assets/contact_page.jpg)
 
 You can also choose to follow and unfollow other users to build your network, as well as liking and commenting on other posts.
 
@@ -141,16 +155,13 @@ The images are attractive and welcoming to encourage interaction with the posts 
     - Allows users to register their details
 * Comment.js (const Comment)
     - Allows a comment to be posted, edited or deleted
-* CommentCreateForm.js (function CommentCreateForm)
-    - Used in PostPage.js to allow comments to be added
-* CommentEditForm.js (function CommentEditForm)
-    - Used in Comment.js to edit existing comments
+
 
 <br>
 
-## Back end Documentation
+## Back-end Documentation
 
-The back end Django Rest aspect of this application is there to allow full management of the accounts and for Superusers to carry out administrative tasks as needed.
+The back-end Django Rest aspect of this application is there to allow full management of the accounts and for Superusers to carry out administrative tasks as needed.
 
 To allow for easier debugging and a more simplistic view of all of the code, I chose to merge the front and back end aspects prior to submission. 
 Deployment involves the following steps via Heroku;
@@ -213,7 +224,7 @@ Testing attempts resulted in the following errors, stil to be resolved;
 
 ![Testing2](frontend/src/assets/testing2.jpg)
 
-The W3C Markup Validator and W3c CSS produced the following results;
+The W3C Markup Validator and W3C CSS produced the following results;
 
 <br>
 
@@ -251,40 +262,45 @@ The performance is disappointing and will be reviewed and improved wherever poss
 
 All of the above issues were initially resolved by removing DEV - 1 from the config vars in Heroku.
 
-- Sourcing images of the correct size and dimensions proved difficult 
+- Heroku does not appear to be deploying correctly - all of my amended code is showing on the frontend but does not appear to be pulling through to Heroku or updating at the backend 
 - My Cloudinary structure is incorrect but has now been resolved - this was also contributing to broken image links
 - The Admin page is no longer styled when deployed via Heroku and since deploying for the final time I can no longer access the backend
-- There are ongoing issues with the DRUD functionality on the post detila page - the option to edit and delete posts is not available and the avatar image link is broken. Significant time was taken to resolve this but ultimately remains unresolved, resulting in severely affected UX, but this will continue to be worked on.
-- The custom models have been added to the back end, but are not interactive with the front end - an issue that will also be looked at on an ongoing basis until it is corrected.
-- The Python code style generally conformed but any deviations were amended
-- THe infinite scroll function was working successfully initially but has since become an issue, again resulting in poor UX, but will be fixed in future
+- There are ongoing issues with the CRUD functionality on the post detail page - the option to edit and delete posts is not available and the avatar image link is broken - there is an ongoing disconnection between posts and their owners
 
 <br>
 
-Although the number of errors, warnings and broken links is very unfeasibly high for what should be a polished, interactive and user friendly platform, all of these issues are an opportunity to further develop my knowledge.
+![error](frontend/src/assets/error.jpg)
+
+There had also been a further error, but during a Tutor session this appeared to have resolved itself and is no longer showing;
+
+<br>
+
+![error2](frontend/src/assets/error2.jpg)
+
+<br>
+
+- The custom models have been added to the back end, but are not interactive with the front end - an issue that will also be looked at on an ongoing basis until it is corrected
+- The Python code style generally conforms and any obvious deviations were amended
+- The infinite scroll function was working successfully initially but has since become an issue, again resulting in poor UX, but will be fixed in future
+
+<br>
 
 The following resources were utilised when trying to resolve all of the above;
 
 - Tutor Assistance
 - Stack Overflow
-- The Slack Community
-- Mentor Sessions
+- The Slack Community including Workflow requests
+- Mentor/ Tutor one-to-one Sessions
 - Google
+- Diffchecker
 
-## Custom Models
+<br>
 
-The initial process (although currently incomplete) was as follows;
-
-- created apps
-- updated models.py
-- set up serializer
-- updated views.py
-- updated urls.py
-- updated project urls
+Although the number of errors, warnings and broken links is unfeasibly high for what should be a polished, interactive and user friendly platform, all of these issues are an opportunity to further develop my knowledge. Attempts were made to fix every issue and extensive research was undertaken using a variety of resources but ultimately they remain unresolved, resulting in severely affected UX. I will continue to work on this to improve the quality of my work going forward.
 
 ## Future Actions 
 
-The below will be actioned either via a cloned repository or prior to my portfolio being completed.
+
 
 - Significantly more testing to ensure that everything is in working order
 - The addition of more detailed labels and milestones added to the Project Board
@@ -292,8 +308,7 @@ The below will be actioned either via a cloned repository or prior to my portfol
 - Improved styling
 - More independent code writing, and not relying so heavily on the walkthrough projects
 - Increased functionality and an improved user experience
-- Additional features such as recipe sharing and restaurant reviews
-- Additional users stories are to be included covering each scenario across the website 
+- Additional features such as restaurant reviews and VIP access to the site
 
 
 
