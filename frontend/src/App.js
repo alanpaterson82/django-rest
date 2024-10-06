@@ -18,6 +18,8 @@ import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
 import ContactCreateForm from "./pages/contact/ContactCreateForm";
 import RecipesCreateForm from "./pages/recipes/RecipesCreateForm";
+import RecipesPage from "./pages/recipes/RecipesPage"
+import RecipesEditForm from "./pages/recipes/RecipesEditForm"
 
 function App() {
   const currentUser = useCurrentUser();
@@ -63,6 +65,8 @@ function App() {
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route exact path="/contact/create" render={() => <ContactCreateForm />} />
           <Route exact path="/recipes/create" render={() => <RecipesCreateForm />} />
+          <Route exact path="/recipes" render={() => <RecipesPage />} />
+          <Route exact path="/recipes/:id/edit" render={() => <RecipesEditForm />} />
           <Route
             exact
             path="/profiles/:id/edit/username"
