@@ -164,6 +164,9 @@ The images are attractive and welcoming to encourage interaction with the posts 
 The back-end Django Rest aspect of this application is there to allow full management of the accounts and for Superusers to carry out administrative tasks as needed.
 
 To allow for easier debugging and a more simplistic view of all of the code, I chose to merge the front and back end aspects prior to submission. 
+
+<br>
+
 Deployment involves the following steps via Heroku;
 
 <br>

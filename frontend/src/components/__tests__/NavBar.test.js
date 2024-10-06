@@ -37,7 +37,7 @@ test("renders Sign in and Sign up buttons again on log out", async () => {
     </Router>
   );
 
-  const signOutLink = await screen.findByRole("link", { name: "Sign out" });
+  const signOutLink = await screen.findByRole("link", { name: "Sign Out" });
   fireEvent.click(signOutLink);
 
   const signInLink = await screen.findByRole("link", { name: "Sign in" });
