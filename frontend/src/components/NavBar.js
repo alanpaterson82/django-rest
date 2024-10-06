@@ -118,7 +118,7 @@ const NavBar = () => {
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="150" />
+            <img src={logo} alt="logo" className="logo" />
             <h3><strong>Mince 'n' Patties</strong></h3>
             <h5><strong>Your favourite burger comparison site</strong></h5>
           </Navbar.Brand>
