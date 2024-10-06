@@ -71,7 +71,7 @@ const ProfileEditForm = () => {
     }
 
     try {
-      const { data } = await axiosReq.put(`/profiles/${id}/`, formData);
+      const { data } = await axiosReq.patch(`/profiles/${id}/`, formData);
       setCurrentUser((currentUser) => ({
         ...currentUser,
         profile_image: data.image,

@@ -58,6 +58,7 @@ function ProfilePage() {
     };
     fetchData();
   }, [id, setProfileData]);
+  console.log(profile)
 
   const mainProfile = (
     <>

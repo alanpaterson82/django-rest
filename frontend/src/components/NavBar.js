@@ -37,26 +37,26 @@ const NavBar = () => {
       to="/posts/create"
     >
       <i className="fa-solid fa-carrot"></i><strong>Post</strong>
-      </NavLink>
+    </NavLink>
   );
 
   const contactIcon = (
     <NavLink
-    className={styles.NavLink}
-    activeClassName={styles.Active}
-    to="/contact/create"
-  >
-    <i className="far fa-plus-square"></i><strong>Contact</strong>
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/contact/create"
+    >
+      <i className="far fa-plus-square"></i><strong>Contact</strong>
     </NavLink>
   )
 
   const recipesIcon = (
     <NavLink
-    className={styles.NavLink}
-    activeClassName={styles.Active}
-    to="/recipes/create"
-  >
-    <i className="fa-solid fa-kitchen-set"></i><strong>Recipes</strong>
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/recipes"
+    >
+      <i className="fa-solid fa-kitchen-set"></i><strong>Recipes</strong>
     </NavLink>
   )
 
@@ -76,9 +76,9 @@ const NavBar = () => {
       >
         <i className="fa-solid fa-pepper-hot"></i><strong>Hot Stuff</strong>
       </NavLink>
-      <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
+      <p onClick={handleSignOut}>
         <i className="fa-solid fa-person-through-window"></i><strong>Exit</strong>
-      </NavLink>
+      </p>
       <NavLink
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}
@@ -106,7 +106,7 @@ const NavBar = () => {
     </>
   );
 
-  
+
 
   return (
     <Navbar

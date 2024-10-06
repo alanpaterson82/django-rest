@@ -45,3 +45,9 @@ class ProfileDetail(generics.RetrieveUpdateAPIView):
         following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
     serializer_class = ProfileSerializer
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        if self.request.method == 'GET':
+            return qs
+        return qs.filter(owner=self.request.user)
