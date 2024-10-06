@@ -65,6 +65,13 @@ ALLOWED_HOSTS = [
     'localhost',
     '8000-alanpaterson-djangorest-z6w0mhb25mt.ws.codeinstitute-ide.net'
 ]
+if DEBUG:
+    CORS_ALLOW_ALL_ORIGINS = True
+    CORS_ALLOW_CREDENTIALS = True
+else:
+    CORS_ALLOWED_ORIGINS = [
+        os.environ.get('CLIENT_ORIGIN')
+    ]
 
 # Application definition
 
@@ -108,10 +115,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
-
-CORS_ALLOWED_ORIGINS = [
-    os.environ.get('CLIENT_ORIGIN')
 ]
 
 
