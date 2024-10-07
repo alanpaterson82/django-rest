@@ -183,6 +183,7 @@ Deployment involves the following steps via Heroku;
 
 ![Config Vars](frontend/src/assets/config_vars.png)
 
+❌ BUG - frontend deployment was not successful after following the steps for the unified DRF and React project
 
 <br>
 
@@ -227,7 +228,7 @@ Testing attempts resulted in the following errors, stil to be resolved;
 
 ![Testing2](frontend/src/assets/testing2.jpg)
 
-I followed the tutorias as closely as possbile to ensure that I was carrying out the tests successfully, but continued to receive the same errors. I also reviewed the links provided under the less on videos as well as the recommended YouTube video on "What is React Testing library" but was unable to find a solution.
+I followed the tutorials as closely as possbile to ensure that I was carrying out the tests successfully, but continued to receive the same errors. I also reviewed the links provided under the less on videos as well as the recommended YouTube video on "What is React Testing library" but was unable to find a solution.
 
 <br>
 
@@ -237,7 +238,7 @@ I followed the tutorias as closely as possbile to ensure that I was carrying out
 
 | Test | Expected Outcome | Result |
 | ---- | ---- | --- |
-| Enter username and password | You will be taken to the homepage | ✅ PASS |
+| Enter username and password | Directed to the homepage | ✅ PASS |
 
 ### Navigation
 
@@ -245,17 +246,31 @@ I followed the tutorias as closely as possbile to ensure that I was carrying out
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
 | Links in Navbar| When clicked, they connect to the correct pages | ✅ PASS |
-| Click add post | Option to upload content is available | ✅ PASS |
+| Click 'add post' | Option to upload content is available | ✅ PASS |
+| Click 'contact' | Option to provide feedback is available | ✅ PASS |
+| Click 'recipes' | Fields can be completed to upload content | ✅ PASS |
+| Click 'home' | Returns the user to the homepage | ✅ PASS |
+| Click 'exit' | To successfully log out | ✅ PASS |
 
-
-
-
-### Add a post
+### Add a Post
 
 | Test | Expected outcome | Result |
 | --- | --- | --- |
-| Click 'add post' | Option given to upload an image | PASS |
-| Add title and content | Click create to add post | 
+| Click 'Post' | Option given to upload an image | ✅ PASS |
+| Add title and content | Click create to add post | ❌ FAIL - avatar link is broken and post does not load |
+
+### Contact
+
+| Test | Expected Outcome | Result |
+| --- | --- | --- |
+| Click 'Contact' | Fields become available | ✅ PASS
+| Complete all fields and click send | ❌ FAIL - redirected to the home page but no confirmation if details have been sent |
+
+### Recipes
+
+| Test | Expected Outcome | Result |
+| --- | --- | --- |
+
 
 
 <br>
