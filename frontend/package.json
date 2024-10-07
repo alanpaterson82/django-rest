@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "msw": "^2.2.14",
+    "msw": "^2.4.9",
     "nsw": "^0.1.0"
   },
   "engines": {

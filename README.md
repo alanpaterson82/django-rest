@@ -227,6 +227,8 @@ Testing attempts resulted in the following errors, stil to be resolved;
 
 ![Testing2](frontend/src/assets/testing2.jpg)
 
+I followed the tutorias as closely as possbile to ensure that I was carrying out the tests successfully, but continued to receive the same errors. I also reviewed the links provided under the less on videos as well as the recommended YouTube video on "What is React Testing library" but was unable to find a solution.
+
 The W3C Markup Validator and W3C CSS produced the following results;
 
 <br>

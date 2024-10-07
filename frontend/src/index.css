@@ -28,3 +28,9 @@ code {
     width: 80px;
   }
 }
+
+@media (max-height: 100px) {
+  .logo {
+    height: 10px;
+  }
+}
