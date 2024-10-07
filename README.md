@@ -217,7 +217,7 @@ Other
 
 <br> 
 
-## Manual Testing
+## Automated Testing
 
 Due to time constraints and a significant number of issues encountered during the design of this project, there was limited testing undertaken, but this is to be factored into any future projects to further enhance my knowledge of this area, it is fully understood how important this is. 
 
@@ -228,6 +228,38 @@ Testing attempts resulted in the following errors, stil to be resolved;
 ![Testing2](frontend/src/assets/testing2.jpg)
 
 I followed the tutorias as closely as possbile to ensure that I was carrying out the tests successfully, but continued to receive the same errors. I also reviewed the links provided under the less on videos as well as the recommended YouTube video on "What is React Testing library" but was unable to find a solution.
+
+<br>
+
+## Manual Testing
+
+### Sign In
+
+| Test | Expected Outcome | Result |
+| ---- | ---- | --- |
+| Enter username and password | You will be taken to the homepage | ✅ PASS |
+
+### Navigation
+
+
+| Test | Expected Outcome | Result |
+| --- | --- | --- |
+| Links in Navbar| When clicked, they connect to the correct pages | ✅ PASS |
+| Click add post | Option to upload content is available | ✅ PASS |
+
+
+
+
+### Add a post
+
+| Test | Expected outcome | Result |
+| --- | --- | --- |
+| Click 'add post' | Option given to upload an image | PASS |
+| Add title and content | Click create to add post | 
+
+
+<br>
+
 
 The W3C Markup Validator and W3C CSS produced the following results;
 
