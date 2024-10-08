@@ -15,6 +15,7 @@ The initial concept was for the website to be easy to navigate and simple to und
 
 ## Wireframe
 
+
 ### Landing Page:
 
 ![wireframe](frontend/src/assets/wireframe_landing_page.jpg)
