@@ -36,7 +36,7 @@ The landing page is bright, informative and eye-catching and allows you to view 
 
 <br>
 
-![Landing Page](frontend/src/assets/landing_page2.jpg)
+![Landing Page](frontend/src/assets/landing_page.jpg)
 
 <br>
 
@@ -87,11 +87,31 @@ The initial process (although currently incomplete) was as follows;
 - updated urls.py
 - updated project urls
 
+<br>
+
+## Broken Avatar
+
+A bug that has since been fixed is the broken avatar and CRUD functionality when editing and deleting posts - the options to edit and delete are now showing as seen in the 'after' image.
+
+# Before
+
+![Broken Links](frontend/src/assets/broken_avatar.jpg)
+
+# After
+
+![Fixed ink](frontend/src/assets/fixed_avatar.jpg)
+
+<br>
+
 ## Example of Custom Model - Contact Page
 
 ![Contact Page](frontend/src/assets/contact_page.jpg)
 
 You can also choose to follow and unfollow other users to build your network, as well as liking and commenting on other posts.
+
+## Recipe Page
+
+![Recipe Page](frontend/src/assets/successful_recipe_posts.jpg)
 
 <br>
 
@@ -289,7 +309,7 @@ The W3C Markup Validator and W3C CSS produced the following results;
 
 <br>
 
-![Lighthouse](frontend/src/assets/lighthouse2.jpg)
+![Lighthouse](frontend/src/assets/lighthouse_report.jpg)
 
 
 <br>
