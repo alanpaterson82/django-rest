@@ -113,6 +113,8 @@ You can also choose to follow and unfollow other users to build your network, as
 
 ![Recipe Page](frontend/src/assets/successful_recipe_posts.jpg)
 
+I have left the User Stories: Add a Recipe and Contact The Administrators as 'in progress' as further development is needed to improve functionality and styling, but this is a start!
+
 <br>
 
 ![Follow](frontend/src/assets/most_followed_profiles.jpg)
