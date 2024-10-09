@@ -24,7 +24,7 @@ The initial concept was for the website to be easy to navigate and simple to und
 
 ### Entity Relationship Diagram
 
-![ERD](frontend/src/assets/erd.jpg)
+![ERD](frontend/src/assets/database_schema.png)
 
 <br>
 
@@ -113,7 +113,7 @@ You can also choose to follow and unfollow other users to build your network, as
 
 ![Recipe Page](frontend/src/assets/successful_recipe_posts.jpg)
 
-I have left the User Stories: Add a Recipe and Contact The Administrators as 'in progress' as further development is needed to improve functionality and styling, but this is a start!
+I have left the User Stories: Add a Recipe and Contact The Administrators as 'in progress' as further development is needed to improve functionality and styling, but this is a significant improvement on the original code. The contact form, when completed, currently redirects back to the home page. An alert to confirm that the details have been sent is required, as well as additional code for the details to be received.
 
 <br>
 
@@ -131,6 +131,26 @@ The front end of this application allows for full CRUD functionality and subscri
 - Read others content
 - Update their personal details and edit their posts
 - Delete their posts and comments 
+
+## Error Messages
+
+There are a number of error messages included to alert users and provide further instruction, which will increase UX. Examples are below;
+
+### Unable To Log In / No Existing Account
+
+![Unable to log in](frontend/src/assets/unable_to_log_in.jpg)
+
+### You Can't Like Your Own Posts
+
+![You Can't Like Your Oen Posts](frontend/src/assets/you_cant_like_your_own_posts.png)
+
+### Login To Like Posts
+
+![Login To Like Posts](frontend/src/assets/login_to_like_posts.png)
+
+### Search Unsuccessful
+
+![Search Unsuccessful](frontend/src/assets/search_unsuccessful.png)
 
 <br>
 
@@ -206,7 +226,16 @@ Deployment involves the following steps via Heroku;
 
 ![Config Vars](frontend/src/assets/config_vars.png)
 
-❌ BUG - frontend deployment was not successful after following the steps for the unified DRF and React project
+If you unified the front and back end you are required to copy the build folder over to the staticfiles folder.
+
+This is done by running the following commands;
+
+ - python3 manage.py collectstatic
+ - in the frontend run npm run build && mv build ../staticfiles/. followed by npm run build && rm -rf ../staticfiles/build && mv build ../staticfiles/.
+ - Commit your changes and login to Heroku
+ - Access the dashboard and choose your DRF application
+ - From the Deploy tab click 'Deploy Branch'
+
 
 <br>
 
