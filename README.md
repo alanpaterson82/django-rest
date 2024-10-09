@@ -11,7 +11,7 @@ The full platform is available to view [here](https://django-rest-ap-9a62d525c1f
 
 ![Am I Responsive](frontend/src/assets/am_i_responsive.jpg)
 
-The initial concept was for the website to be easy to navigate and simple to understand. The planning of the site was via user stories and the project can be found [here](https://github.com/users/alanpaterson82/projects/10), (two user stories remain 'in progress' as further work is needed for them to be fully functional). The basic premise is outlined below for the landing page.
+The initial concept was for the website to be easy to navigate and simple to understand. The planning of the site was via user stories and the project can be found [here](https://github.com/users/alanpaterson82/projects/10), The basic premise is outlined below for the landing page.
 
 ## Wireframe
 
@@ -76,44 +76,26 @@ Once logged in there are various options as detailed below:
 - Profile - review your details and edit them as you wish eg profile picture, password or username.
 
 
-## Custom Models
-
-The initial process (although currently incomplete) was as follows;
-
-- created apps
-- updated models.py
-- set up serializer
-- updated views.py
-- updated urls.py
-- updated project urls
-
 <br>
 
-## Broken Avatar
-
-A bug that has since been fixed is the broken avatar and CRUD functionality when editing and deleting posts - the options to edit and delete are now showing as seen in the 'after' image.
-
-# Before
-
-![Broken Links](frontend/src/assets/broken_avatar.jpg)
-
-# After
-
-![Fixed ink](frontend/src/assets/fixed_avatar.jpg)
+## Custom Model - Contact Page
 
 <br>
-
-## Example of Custom Model - Contact Page
 
 ![Contact Page](frontend/src/assets/contact_page.jpg)
 
-You can also choose to follow and unfollow other users to build your network, as well as liking and commenting on other posts.
 
-## Recipe Page
+## Custom Model - Recipe Page
+
+<br>
 
 ![Recipe Page](frontend/src/assets/successful_recipe_posts.jpg)
 
 I have left the User Stories: Add a Recipe and Contact The Administrators as 'in progress' as further development is needed to improve functionality and styling, but this is a significant improvement on the original code. The contact form, when completed, currently redirects back to the home page. An alert to confirm that the details have been sent is required, as well as additional code for the details to be received.
+
+<br>
+
+You can also choose to follow and unfollow other users to build your network, as well as liking and commenting on other posts.
 
 <br>
 
@@ -151,12 +133,6 @@ There are a number of error messages included to alert users and provide further
 ### Search Unsuccessful
 
 ![Search Unsuccessful](frontend/src/assets/search_unsuccessful.png)
-
-<br>
-
-The current custom models are the user and profile options as well as a 'contact us' form and recipe sharing page, however, there is scope for much more interactive content including but not limited to, polls on favourite foods, meal planning suggestions and restaurant recommendations.  
-
-VIP members could also access exclusive offers such as competitions and giveaways.
 
 <br>
 
@@ -226,12 +202,12 @@ Deployment involves the following steps via Heroku;
 
 ![Config Vars](frontend/src/assets/config_vars.png)
 
-If you unified the front and back end you are required to copy the build folder over to the staticfiles folder.
+If the front and back end are unified you are required to copy the build folder over to the staticfiles folder.
 
 This is done by running the following commands;
 
  - python3 manage.py collectstatic
- - in the frontend run npm run build && mv build ../staticfiles/. followed by npm run build && rm -rf ../staticfiles/build && mv build ../staticfiles/.
+ - In the frontend run npm run build && mv build ../staticfiles/. followed by npm run build && rm -rf ../staticfiles/build && mv build ../staticfiles/.
  - Commit your changes and login to Heroku
  - Access the dashboard and choose your DRF application
  - From the Deploy tab click 'Deploy Branch'
@@ -274,44 +250,58 @@ Other
 
 Due to time constraints and a significant number of issues encountered during the design of this project, there was limited testing undertaken, but this is to be factored into any future projects to further enhance my knowledge of this area, it is fully understood how important this is. 
 
+### Frontend
+
 Testing attempts resulted in the following errors, stil to be resolved;
 
 ![Testing](frontend/src/assets/testing.jpg)
 
 ![Testing2](frontend/src/assets/testing2.jpg)
 
-I followed the tutorials as closely as possbile to ensure that I was carrying out the tests successfully, but continued to receive the same errors. I also reviewed the links provided under the less on videos as well as the recommended YouTube video on "What is React Testing library" but was unable to find a solution.
+### Backend
+
+![Backend Testing](frontend/src/assets/backend_testing.png)
+
+I followed the tutorials as closely as possible to ensure that I was carrying out the tests successfully, but continued to receive the same errors. I also reviewed the links provided under the lesson videos as well as the recommended YouTube video on "What is React Testing library" but was unable to find a solution.
 
 <br>
 
-## Manual Testing
+## Manual Testing - Frontend
 
-### Sign In
+<br>
+
+## Sign In
 
 | Test | Expected Outcome | Result |
 | ---- | ---- | --- |
 | Enter username and password | Directed to the homepage | ✅ PASS |
 | Incorrect username or password entered | Error message received | ✅ PASS |
 
-### Navigation
+<br>
+
+## Navigation
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
 | Links in Navbar| When clicked, they connect to the correct pages | ✅ PASS |
-| Click 'add post' | Option to upload content is available | ✅ PASS |
-| Click 'contact' | Option to provide feedback is available | ✅ PASS |
-| Click 'recipes' | Fields can be completed to upload content | ✅ PASS |
-| Click 'home' | Returns the user to the homepage | ✅ PASS |
-| Click 'exit' | To successfully log out | ✅ PASS |
+| Click 'Add Post' | Option to upload content is available | ✅ PASS |
+| Click 'Contact' | Option to provide feedback is available | ✅ PASS |
+| Click 'Recipes' | Fields can be completed to upload content | ✅ PASS |
+| Click 'Home' | Returns the user to the homepage | ✅ PASS |
+| Click 'Exit' | To successfully log out | ✅ PASS |
 
-### Add a Post
+<br> 
+
+## Add a Post
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
 | Click 'Post' | Option given to upload an image | ✅ PASS |
 | Add title and content | Click create to add post | ✅ PASS |
 
-### Comment on/ Like a Post
+<br>
+
+## Comment on/ Like a Post
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
@@ -320,24 +310,43 @@ I followed the tutorials as closely as possbile to ensure that I was carrying ou
 | Deleting a comment | Request is successful, comment is removed | ✅ PASS |
 | Liking a post | Request is successful, like count increases | ✅ PASS |
 
-### Recipes
+<br>
+
+## Recipes
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
 | Uploading a recipe | Click 'Recipes', complete all fields and click post, the details are shown, all text visible | ✅ PASS |
 | Editing and deleting recipes | Click the relevant button, the recipe can be edited or is deleted completely | ✅ PASS |
 
-### Contact Form
+<br>
+
+## Contact Form
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- | 
 | Sending feedback | Click 'Contact', complete all fields and receive notification that it has been sent | ❌ FAIL - currently redirected to homepage with no alert |
 
-### Sign Out
+<br>
+
+## Sign Out
 
 | Test | Expected Outcome | Result
 | --- | --- | --- |
 | Click Sign Out | Navbar defaults to Home/ Sign In/ Sign Up options | ✅ PASS |
+
+<br>
+
+## Manual Testing - Backend
+
+<br>
+
+It is understood that manual testing for the backend requires the following steps;
+
+ - Analysing the requirements for the backend system
+ - Identifying the backend components to be tested i.e database, server, API and security
+
+Running the test cases on the test environment is crucial to identify defects that successful automated testing may miss. As previously stated, the importance of this is not underestimated.
 
 <br>
 
@@ -358,11 +367,22 @@ The W3C Markup Validator and W3C CSS produced the following results;
 
 <br>
 
-The performance is disappointing and will be reviewed and improved wherever possible.
+The performance is disappointing and will be reviewed and improved wherever possible. Identified bugs and 'messy' code will contribute to this score, but as my skills increase this will be resolved.
 
 <br>
 
 ## Bugs Resolved & Unresolved
+
+
+An initial bug that has since been fixed is the broken avatar and CRUD functionality when editing and deleting posts - the options to edit and delete are now showing as seen in the 'after' image.
+
+Before:
+
+![Broken Links](frontend/src/assets/broken_avatar.jpg)
+
+After:
+
+![Fixed ink](frontend/src/assets/fixed_avatar.jpg)
 
 - There were issues with code not 'auto-importing' so this was completed manually with extra diligence needed to ensure that this was being completed accurately
 - Due to confusion with working in the development environment, there was significant time spent on attempting to resolve the following issues
@@ -379,10 +399,7 @@ The performance is disappointing and will be reviewed and improved wherever poss
 
 All of the above issues were initially resolved by removing DEV - 1 from the config vars in Heroku.
 
-- Heroku does not appear to be deploying correctly - all of my amended code is showing on the frontend but does not appear to be pulling through to Heroku or updating at the backend 
-- My Cloudinary structure is incorrect but has now been resolved - this was also contributing to broken image links
-- The Admin page is no longer styled when deployed via Heroku and since deploying for the final time I can no longer access the backend
-- There are ongoing issues with the CRUD functionality on the post detail page - the option to edit and delete posts is not available and the avatar image link is broken - there is an ongoing disconnection between posts and their owners
+- My Cloudinary structure was incorrect but has now been resolved - this was also contributing to broken image links
 
 <br>
 
@@ -396,7 +413,6 @@ There had also been a further error, but during a Tutor session this appeared to
 
 <br>
 
-- The custom models have been added to the back-end, but are not interactive with the front-end - an issue that will also be looked at on an ongoing basis until it is corrected
 - The Python code style generally conforms and any obvious deviations were amended
 - The infinite scroll function was working successfully initially but has since become an issue, resulting in poor UX, but will be fixed in future
 
@@ -414,11 +430,9 @@ The following resources were utilised when trying to resolve all of the above;
 
 <br>
 
-Although the number of errors, warnings and broken links is unfeasibly high for what should be a polished, interactive and user friendly platform, all of these issues are an opportunity to further develop my knowledge. Attempts were made to fix every issue and extensive research was undertaken using a variety of resources but ultimately they remain unresolved, resulting in severely affected UX. I will continue to work on this to improve the quality of my work going forward.
+Although this is far from a polished, interactive and user friendly platform, all of the above issues are an opportunity to further develop my knowledge. Attempts were made to fix every issue and extensive research was undertaken using a variety of resources but ultimately some remain unresolved, resulting in affected UX. I will continue to work on this to improve the quality of my work going forward.
 
 ## Future Actions 
-
-
 
 - Significantly more testing to ensure that everything is in working order
 - The addition of more detailed labels and milestones added to the Project Board
