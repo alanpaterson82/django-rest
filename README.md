@@ -291,9 +291,9 @@ I followed the tutorials as closely as possbile to ensure that I was carrying ou
 | Test | Expected Outcome | Result |
 | ---- | ---- | --- |
 | Enter username and password | Directed to the homepage | ✅ PASS |
+| Incorrect username or password entered | Error message received | ✅ PASS |
 
 ### Navigation
-
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
@@ -306,27 +306,40 @@ I followed the tutorials as closely as possbile to ensure that I was carrying ou
 
 ### Add a Post
 
-| Test | Expected outcome | Result |
+| Test | Expected Outcome | Result |
 | --- | --- | --- |
 | Click 'Post' | Option given to upload an image | ✅ PASS |
-| Add title and content | Click create to add post | ❌ FAIL - avatar link is broken and post does not load |
+| Add title and content | Click create to add post | ✅ PASS |
 
-### Contact
+### Comment on/ Like a Post
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
-| Click 'Contact' | Fields become available | ✅ PASS
-| Complete all fields and click send | ❌ FAIL - redirected to the home page but no confirmation if details have been sent |
+| Writing a comment | Request is successful, comment is shown on post, comment count increases | ✅ PASS |
+| Editing a comment | Request is successful, changes take effect and text updated | ✅ PASS |
+| Deleting a comment | Request is successful, comment is removed | ✅ PASS |
+| Liking a post | Request is successful, like count increases | ✅ PASS |
 
 ### Recipes
 
 | Test | Expected Outcome | Result |
 | --- | --- | --- |
+| Uploading a recipe | Click 'Recipes', complete all fields and click post, the details are shown, all text visible | ✅ PASS |
+| Editing and deleting recipes | Click the relevant button, the recipe can be edited or is deleted completely | ✅ PASS |
 
+### Contact Form
 
+| Test | Expected Outcome | Result |
+| --- | --- | --- | 
+| Sending feedback | Click 'Contact', complete all fields and receive notification that it has been sent | ❌ FAIL - currently redirected to homepage with no alert |
+
+### Sign Out
+
+| Test | Expected Outcome | Result
+| --- | --- | --- |
+| Click Sign Out | Navbar defaults to Home/ Sign In/ Sign Up options | ✅ PASS |
 
 <br>
-
 
 The W3C Markup Validator and W3C CSS produced the following results;
 
